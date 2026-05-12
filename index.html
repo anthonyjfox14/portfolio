@@ -555,14 +555,14 @@ html, body { width: 100%; min-height: 100%; background: #fff; }
       </div>
 
       <!-- 03 Conduit Commerce -->
-      <div class="work-card">
+      <div class="work-card" onclick="openConduitCX()">
         <div class="card-hdr">
           <div class="card-dot-el"></div>
           <span class="card-num">CONDUIT COMMERCE &mdash; NO.&nbsp;03</span>
         </div>
-        <div class="card-img"></div>
+        <div class="card-img"><img src="https://www.figma.com/api/mcp/asset/8b284d00-d103-498d-ae2b-fa6cae738c0c" alt="Conduit Commerce" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         <div class="card-body">
-          <p class="card-desc">blablabla</p>
+          <p class="card-desc">Designing &amp; Shipping a B2B SaaS website for an AI feature launch</p>
           <div class="card-tags">
             <span class="card-tag">Internship</span>
             <span class="card-tag">Shipped</span>
@@ -1349,6 +1349,11 @@ html, body { width: 100%; min-height: 100%; background: #fff; }
         <span class="cs-more-name">SomiaCX &times; MUFG</span>
         <span class="cs-more-desc">Architecting a unified UVP system for 3 financial subsidiaries</span>
       </div>
+      <div class="cs-more-card" onclick="closeCaseStudy();openConduitCX()">
+        <span class="cs-more-num">CONDUIT COMMERCE &mdash; NO.&nbsp;03</span>
+        <span class="cs-more-name">Conduit Commerce</span>
+        <span class="cs-more-desc">Designing &amp; Shipping a B2B SaaS website for an AI feature launch.</span>
+      </div>
     </div>
   </div>
 </section>
@@ -1855,6 +1860,512 @@ html, body { width: 100%; min-height: 100%; background: #fff; }
         <span class="cs-more-name">Manus AI</span>
         <span class="cs-more-desc">Designing an AI community platform to drive adoption.</span>
       </div>
+      <div class="cs-more-card" onclick="closeSomiaCX();openConduitCX()">
+        <span class="cs-more-num">CONDUIT COMMERCE &mdash; NO.&nbsp;03</span>
+        <span class="cs-more-name">Conduit Commerce</span>
+        <span class="cs-more-desc">Designing &amp; Shipping a B2B SaaS website for an AI feature launch.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ CONDUIT COMMERCE CASE STUDY -->
+<section class="cs-section" id="case-conduit">
+  <div class="cs-topnav">
+    <div class="cs-topnav-logo" onclick="closeConduitCX()">
+      <img src="https://www.figma.com/api/mcp/asset/80e6d9fb-1d5b-4ef6-889f-b67bf8cf4122" alt="jk">
+    </div>
+    <div class="cs-topnav-inner">
+      <a data-section="conduit-overview" onclick="document.getElementById('conduit-overview').scrollIntoView({behavior:'smooth'})">Overview</a>
+      <a data-section="conduit-problem" onclick="document.getElementById('conduit-problem').scrollIntoView({behavior:'smooth'})">Problem</a>
+      <a data-section="conduit-research" onclick="document.getElementById('conduit-research').scrollIntoView({behavior:'smooth'})">Research</a>
+      <a data-section="conduit-development" onclick="document.getElementById('conduit-development').scrollIntoView({behavior:'smooth'})">Development</a>
+      <a data-section="conduit-solution" onclick="document.getElementById('conduit-solution').scrollIntoView({behavior:'smooth'})">Solution</a>
+    </div>
+  </div>
+
+  <!-- cream band: hero + at a glance -->
+  <div style="background:#fff5ef;">
+    <div class="cs-hero-centered">
+      <div class="cs-back" onclick="closeConduitCX()" style="align-self:flex-start;margin-bottom:32px;">&#8592; Back to Work</div>
+      <div class="cs-hero-logo" style="margin-bottom:28px;">
+        <img src="https://www.figma.com/api/mcp/asset/8fe5be05-f760-4f71-93f8-b38b075c105a" alt="Conduit Commerce" style="height:56px;width:auto;display:block;">
+      </div>
+      <h1 class="cs-title-large">Designing &amp; Shipping a B2B SaaS Website for an AI Feature Launch.</h1>
+      <div class="cs-laptop-wrap">
+        <img src="https://www.figma.com/api/mcp/asset/8b284d00-d103-498d-ae2b-fa6cae738c0c" alt="Conduit Commerce dashboard" style="width:100%;display:block;">
+      </div>
+    </div>
+
+    <div class="cs-divider" style="margin-top:0;"></div>
+
+    <div class="cs-glance" id="conduit-overview">
+      <div>
+        <h2>At a Glance</h2>
+        <p>As Product Design Lead, I led a team of 3 designers to support Conduit Commerce&rsquo;s Copilot launch. Conduit is a fintech backed by Dragonfly and Altos Ventures, and I worked directly with the founder, recognized on Forbes 30 Under 30, to align the design with the product&rsquo;s technical ambition and the practical needs of their B2B customer base.</p>
+        <p>Conduit Copilot is an AI that streamlines the entire buying and selling process for wholesale and distribution businesses, an industry that still ran on spreadsheets and phone calls and was largely unfamiliar with AI adoption. The product was a genuine leap forward. Our job was to make sure their branding and website said so.</p>
+        <div class="cs-results-label">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;"><rect x="3" y="3" width="18" height="18" rx="1.5" stroke="#33363F" stroke-width="1.5"/><polyline points="6,16 10,11 14,13 18,8" stroke="#33363F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><polyline points="15,8 18,8 18,11" stroke="#33363F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:500;color:#000;">Results</span>
+        </div>
+      </div>
+      <div class="cs-meta">
+        <div style="display:flex;align-items:flex-start;gap:13px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;"><circle cx="12" cy="7" r="4" stroke="#33363F" stroke-width="2" stroke-linecap="round"/><path d="M5.33788 18.3206C5.99897 15.5269 8.77173 14 11.6426 14H12.3574C15.2283 14 18.001 15.5269 18.6621 18.3206C18.79 18.8611 18.8917 19.4268 18.9489 20.0016C19.0036 20.5512 18.5523 21 18 21H6C5.44772 21 4.99642 20.5512 5.0511 20.0016C5.1083 19.4268 5.20997 18.8611 5.33788 18.3206Z" stroke="#33363F" stroke-width="2" stroke-linecap="round"/></svg>
+          <div>
+            <p style="margin-bottom:11px;">My Role</p>
+            <p>Leading product design, company branding, UX strategy, design system creation, UX copywriting, and usability testing.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cs-meta">
+        <div style="display:flex;gap:13px;align-items:center;margin-bottom:11px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;"><circle cx="12" cy="12" r="9" stroke="#33363F" stroke-width="2" stroke-linecap="round"/><path d="M12 7V12L15 15" stroke="#33363F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p style="white-space:nowrap;">3 months</p>
+        </div>
+        <div style="display:flex;gap:13px;align-items:flex-start;">
+          <img src="https://www.figma.com/api/mcp/asset/a0ff6a11-0656-4a2b-97cf-97e2458f8147" style="width:24px;height:24px;flex-shrink:0;" alt="">
+          <p>2 UX Designers (me!)<br>1 UX Researcher<br>1 Marketing Designer<br>1 Founder<br>1 PM</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="padding:0 130px 48px;">
+      <div class="cs-pills" style="flex-wrap:nowrap;">
+        <span class="cs-pill">~40% reduction in bounce rate</span>
+        <span class="cs-pill">~28% increase in demo requests</span>
+        <span class="cs-pill">Shipped &amp; live</span>
+      </div>
+    </div>
+  </div><!-- end cream band -->
+
+  <div class="cs-divider"></div>
+
+  <!-- PROBLEM -->
+  <div class="cs-block" id="conduit-problem">
+    <p class="cs-label-tag">Problem</p>
+    <div class="cs-two">
+      <h2>The Website Was Working Against the Product.</h2>
+      <p class="body-copy">Conduit Commerce is a B2B SaaS and CaaS platform built for a specific, underserved audience: the people who buy and sell physical goods in wholesale and distribution. Think carpet sellers, materials buyers, regional distributors. Their product suite spans four pillars: Copilot, Ops, Wholesale, and Dropship.<br><br>Conduit was looking to expand toward more tech-savvy, modern clients without losing their core base, Midwest wholesale buyers. It&rsquo;s a challenge of acquisition and retention at once, and it all comes down to how the brand, design, and copy position the product. Especially with their newly launched Copilot.</p>
+    </div>
+  </div>
+
+  <div class="cs-divider"></div>
+
+  <!-- SOLUTION PREVIEW -->
+  <div class="cs-block shade">
+    <p class="cs-label-tag">Solution Preview &rarr;</p>
+    <div class="cs-flow" style="margin-top:32px;">
+      <div class="cs-flow-step">
+        <p class="cs-step-label">User lands on<br>website</p>
+        <div class="cs-step-img" style="padding:28px 16px;display:flex;align-items:center;justify-content:center;min-height:110px;">
+          <svg width="58" height="46" viewBox="0 0 58 46" fill="none"><rect x="2" y="2" width="54" height="36" rx="4" stroke="#333" stroke-width="2.5"/><rect x="20" y="40" width="18" height="4" rx="2" fill="#333"/><rect x="8" y="42" width="42" height="2.5" rx="1.25" fill="#333"/></svg>
+        </div>
+      </div>
+      <div class="cs-arrow">&rarr;</div>
+      <div class="cs-flow-step">
+        <p class="cs-step-label">Explores<br>Copilot</p>
+        <div class="cs-step-img" style="padding:28px 16px;display:flex;align-items:center;justify-content:center;min-height:110px;">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="22" stroke="#333" stroke-width="2.5"/><path d="M18 25h14M25 18v14" stroke="#c97836" stroke-width="3" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+      <div class="cs-arrow">&rarr;</div>
+      <div class="cs-flow-step">
+        <p class="cs-step-label">Understands<br>Conduit&rsquo;s Core</p>
+        <div class="cs-step-img" style="padding:28px 16px;display:flex;align-items:center;justify-content:center;min-height:110px;">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none"><rect x="5" y="12" width="40" height="26" rx="4" stroke="#333" stroke-width="2.5"/><path d="M15 22h20M15 29h12" stroke="#c97836" stroke-width="2.5" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+      <div class="cs-arrow">&rarr;</div>
+      <div class="cs-flow-step">
+        <p class="cs-step-label">Books<br>a Demo</p>
+        <div class="cs-step-img" style="padding:28px 16px;display:flex;align-items:center;justify-content:center;min-height:110px;">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none"><rect x="5" y="8" width="40" height="34" rx="4" stroke="#333" stroke-width="2.5"/><path d="M16 24l8 8 10-14" stroke="#c97836" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INITIAL PIVOT -->
+  <div class="cs-block shade" id="conduit-research">
+    <p class="cs-label-tag">Initial Pivot</p>
+    <div class="cs-two" style="align-items:center;">
+      <div>
+        <h2>The First Design Looked Great. Users Thought We Were Selling Hiking Gear.</h2>
+        <!-- overlapping lofi images -->
+        <div style="position:relative;width:100%;height:320px;margin-top:32px;user-select:none;">
+          <div style="position:absolute;top:20px;left:10px;width:260px;height:200px;border-radius:15px;overflow:hidden;box-shadow:4px 6px 16px rgba(0,0,0,0.22);transform:rotate(-4deg);z-index:1;">
+            <img src="https://www.figma.com/api/mcp/asset/aa7f8c4b-b0d2-4be1-8b0e-94a9fadeba96" style="width:100%;height:100%;object-fit:cover;display:block;" alt="LoFi exploration">
+          </div>
+          <div style="position:absolute;top:40px;left:80px;width:260px;height:200px;border-radius:15px;overflow:hidden;box-shadow:4px 6px 16px rgba(0,0,0,0.25);transform:rotate(2deg);z-index:2;">
+            <img src="https://www.figma.com/api/mcp/asset/8a2a8b7f-19e2-482c-a5d4-f3d14cd17549" style="width:100%;height:100%;object-fit:cover;display:block;" alt="Trend following">
+          </div>
+          <div style="position:absolute;top:100px;left:140px;width:260px;height:200px;border-radius:15px;overflow:hidden;box-shadow:4px 8px 24px rgba(0,0,0,0.28);transform:rotate(-1.5deg);z-index:3;">
+            <img src="https://www.figma.com/api/mcp/asset/c1f3254a-6258-4eb0-8f43-135b3805b4fb" style="width:100%;height:100%;object-fit:cover;display:block;" alt="IA exploration">
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:28px;">
+        <div style="border-left:3px solid #c97836;padding:8px 0 8px 22px;">
+          <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#000;margin-bottom:8px;">LoFi exploration &rarr;</p>
+          <p class="body-copy">We started with visual energy. Bold gradients, expressive layouts, a design language that felt as ambitious as the product. It looked compelling. But it didn&rsquo;t say B2B SaaS. It said lifestyle brand.</p>
+        </div>
+        <div style="border-left:3px solid #c97836;padding:8px 0 8px 22px;">
+          <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#000;margin-bottom:8px;">Following trends &rarr;</p>
+          <p class="body-copy">The first direction chased design trends that were popular but industry-agnostic. Users couldn&rsquo;t locate themselves in the experience. It felt like it was made for someone else.</p>
+        </div>
+        <div style="border-left:3px solid #c97836;padding:8px 0 8px 22px;">
+          <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#000;margin-bottom:8px;">Information Architecture Systems exploration &rarr;</p>
+          <p class="body-copy">We had four product pillars that needed to feel unified, not competing. The IA work became the backbone: every navigation decision had to help users find what they needed and understand why it mattered.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-divider"></div>
+
+  <!-- RESEARCH -->
+  <div class="cs-block">
+    <p class="cs-label-tag">Research</p>
+    <h2 style="margin-bottom:36px;">Style Over Function Was Losing Our Users.</h2>
+    <div style="display:flex;gap:56px;align-items:flex-start;flex-wrap:wrap;">
+      <!-- Quote card deck -->
+      <div style="position:relative;width:380px;height:280px;flex-shrink:0;user-select:none;" id="conduit-quote-deck">
+        <!-- Card 2: back -->
+        <div id="cqcard-2" style="position:absolute;top:18px;left:18px;width:335px;transform:rotate(5deg) scale(0.95);z-index:1;opacity:0.65;transition:transform 0.48s cubic-bezier(0.4,0,0.2,1),opacity 0.38s;pointer-events:none;">
+          <div style="background:#fff5ef;border-radius:15px;padding:28px 24px;box-shadow:3px 5px 5px rgba(0,0,0,0.22);box-sizing:border-box;">
+            <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;color:#000;line-height:1.5;margin:0 0 18px;">&ldquo;I get that it&rsquo;s AI for suppliers and retailers, but what does it actually do? &lsquo;Proactive outreach&rsquo; doesn&rsquo;t tell me anything.&rdquo;</p>
+            <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-style:italic;color:#786b63;margin:0;">&#8212; Conduit User Interviewee</p>
+          </div>
+        </div>
+        <!-- Card 1: middle -->
+        <div id="cqcard-1" style="position:absolute;top:8px;left:8px;width:335px;transform:rotate(2.5deg) scale(0.975);z-index:2;opacity:0.8;transition:transform 0.48s cubic-bezier(0.4,0,0.2,1),opacity 0.38s;pointer-events:none;">
+          <div style="background:#fff5ef;border-radius:15px;padding:28px 24px;box-shadow:3px 5px 5px rgba(0,0,0,0.22);box-sizing:border-box;">
+            <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;color:#000;line-height:1.5;margin:0 0 18px;">&ldquo;I went straight to Copilot but I still don&rsquo;t know how it connects to Ops or Wholesale. Is this one platform or separate tools?&rdquo;</p>
+            <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-style:italic;color:#786b63;margin:0;">&#8212; Potential User Interviewee</p>
+          </div>
+        </div>
+        <!-- Card 0: front -->
+        <div id="cqcard-0" style="position:absolute;top:0;left:0;width:335px;transform:rotate(-2.5deg);z-index:3;opacity:1;transition:transform 0.48s cubic-bezier(0.4,0,0.2,1),opacity 0.38s;cursor:pointer;" onclick="flipConduitQuote()">
+          <div style="background:#fff5ef;border-radius:15px;padding:28px 24px;box-shadow:3px 5px 5px rgba(0,0,0,0.25);box-sizing:border-box;">
+            <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;color:#000;line-height:1.5;margin:0 0 18px;">&ldquo;Sometimes, the website wouldn&rsquo;t even load for me. I think it has too much things going on there. Usually, I just prefer contacting their customer service immediately.&rdquo;</p>
+            <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-style:italic;color:#786b63;margin:0;">&#8212; Conduit User Interviewee</p>
+          </div>
+        </div>
+        <p style="position:absolute;bottom:-22px;left:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:rgba(0,0,0,0.4);margin:0;">click to flip &rarr;</p>
+      </div>
+
+      <!-- Research findings -->
+      <div style="flex:1;min-width:280px;display:flex;flex-direction:column;gap:20px;">
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#000;margin:0 0 4px;">User interviews (11) and secondary research &rarr;</p>
+        <div style="background:#fffaf7;border-radius:15px;padding:16px 20px;box-shadow:0 4px 2px rgba(0,0,0,0.25);display:flex;flex-direction:column;gap:18px;">
+          <div style="display:flex;gap:14px;align-items:flex-start;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;margin-top:2px;"><circle cx="12" cy="12" r="9" stroke="#C97836" stroke-width="1.8" stroke-linecap="round"/><path d="M12 7.5V12L14.5 14" stroke="#C97836" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;color:#000;line-height:1.5;margin:0;"><strong>4 out of 7</strong> current users reported the site failed to load entirely on slower connections, before they even saw the product.</p>
+          </div>
+          <div style="display:flex;gap:14px;align-items:flex-start;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;margin-top:2px;"><path d="M14 9V5.5C14 4.12 12.88 3 11.5 3H9.5C8.12 3 7 4.12 7 5.5V8.5C7 9.33 7.5 10.08 8.28 10.4L10 11.15V13C10 13.55 10.45 14 11 14H13C13.55 14 14 13.55 14 13V9Z" stroke="#C97836" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 14V18.5C14 19.88 12.88 21 11.5 21H9.5C8.12 21 7 19.88 7 18.5V15.5C7 14.67 7.5 13.92 8.28 13.6L10 12.85V11" stroke="#C97836" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;color:#000;line-height:1.5;margin:0;">A lot of potential users who weren&rsquo;t used to Conduit <strong>didn&rsquo;t understand</strong> the products they were selling.</p>
+          </div>
+          <div style="display:flex;gap:14px;align-items:flex-start;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;margin-top:2px;"><path d="M12 3C12 3 7 8 7 13C7 15.76 9.24 18 12 18C14.76 18 17 15.76 17 13C17 8 12 3 12 3Z" stroke="#C97836" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21H15" stroke="#C97836" stroke-width="1.8" stroke-linecap="round"/><path d="M12 18V21" stroke="#C97836" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;color:#000;line-height:1.5;margin:0;"><strong>8 out of 11</strong> users in testing described the first design as a lifestyle brand, not a B2B operations tool.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-divider"></div>
+
+  <!-- UNDERSTANDING OUR USERS -->
+  <div class="cs-block shade">
+    <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#000;margin-bottom:24px;">Understanding our users &rarr;</p>
+    <!-- 11 user boxes in rows -->
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px;">
+<div style="background:rgba(231,221,215,1);border-radius:10px;padding:6px;width:48px;height:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#786b63;margin-bottom:-2px;">1</span><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="10.5" r="6" stroke="#786B63" stroke-width="3" stroke-linecap="round"/><path d="M8.00683 27.4808C8.99845 23.2903 13.1576 21 17.4639 21H18.5361C22.8424 21 27.0016 23.2903 27.9932 27.4808C28.185 28.2917 28.3375 29.1402 28.4233 30.0025C28.5054 30.8268 27.8284 31.5 27 31.5H9C8.17157 31.5 7.49463 30.8268 7.57666 30.0025C7.66246 29.1402 7.81495 28.2917 8.00683 27.4808Z" stroke="#786B63" stroke-width="3" stroke-linecap="round"/></svg></div><div style="background:rgba(231,221,215,1);border-radius:10px;padding:6px;width:48px;height:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#786b63;margin-bottom:-2px;">2</span><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="10.5" r="6" stroke="#786B63" stroke-width="3" stroke-linecap="round"/><path d="M8.00683 27.4808C8.99845 23.2903 13.1576 21 17.4639 21H18.5361C22.8424 21 27.0016 23.2903 27.9932 27.4808C28.185 28.2917 28.3375 29.1402 28.4233 30.0025C28.5054 30.8268 27.8284 31.5 27 31.5H9C8.17157 31.5 7.49463 30.8268 7.57666 30.0025C7.66246 29.1402 7.81495 28.2917 8.00683 27.4808Z" stroke="#786B63" stroke-width="3" stroke-linecap="round"/></svg></div><div style="background:rgba(231,221,215,1);border-radius:10px;padding:6px;width:48px;height:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#786b63;margin-bottom:-2px;">3</span><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="10.5" r="6" stroke="#786B63" stroke-width="3" stroke-linecap="round"/><path d="M8.00683 27.4808C8.99845 23.2903 13.1576 21 17.4639 21H18.5361C22.8424 21 27.0016 23.2903 27.9932 27.4808C28.185 28.2917 28.3375 29.1402 28.4233 30.0025C28.5054 30.8268 27.8284 31.5 27 31.5H9C8.17157 31.5 7.49463 30.8268 7.57666 30.0025C7.66246 29.1402 7.81495 28.2917 8.00683 27.4808Z" stroke="#786B63" stroke-width="3" stroke-linecap="round"/></svg></div><div style="background:rgba(231,221,215,1);border-radius:10px;padding:6px;width:48px;height:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#786b63;margin-bottom:-2px;">4</span><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="10.5" r="6" stroke="#786B63" stroke-width="3" stroke-linecap="round"/><path d="M8.00683 27.4808C8.99845 23.2903 13.1576 21 17.4639 21H18.5361C22.8424 21 27.0016 23.2903 27.9932 27.4808C28.185 28.2917 28.3375 29.1402 28.4233 30.0025C28.5054 30.8268 27.8284 31.5 27 31.5H9C8.17157 31.5 7.49463 30.8268 7.57666 30.0025C7.66246 29.1402 7.81495 28.2917 8.00683 27.4808Z" stroke="#786B63" stroke-width="3" stroke-linecap="round"/></svg></div><div style="background:rgba(231,221,215,1);border-radius:10px;padding:6px;width:48px;height:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#786b63;margin-bottom:-2px;">5</span><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="10.5" r="6" stroke="#786B63" stroke-width="3" stroke-linecap="round"/><path d="M8.00683 27.4808C8.99845 23.2903 13.1576 21 17.4639 21H18.5361C22.8424 21 27.0016 23.2903 27.9932 27.4808C28.185 28.2917 28.3375 29.1402 28.4233 30.0025C28.5054 30.8268 27.8284 31.5 27 31.5H9C8.17157 31.5 7.49463 30.8268 7.57666 30.0025C7.66246 29.1402 7.81495 28.2917 8.00683 27.4808Z" stroke="#786B63" stroke-width="3" stroke-linecap="round"/></svg></div><div style="background:rgba(231,221,215,1);border-radius:10px;padding:6px;width:48px;height:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#786b63;margin-bottom:-2px;">6</span><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="10.5" r="6" stroke="#786B63" stroke-width="3" stroke-linecap="round"/><path d="M8.00683 27.4808C8.99845 23.2903 13.1576 21 17.4639 21H18.5361C22.8424 21 27.0016 23.2903 27.9932 27.4808C28.185 28.2917 28.3375 29.1402 28.4233 30.0025C28.5054 30.8268 27.8284 31.5 27 31.5H9C8.17157 31.5 7.49463 30.8268 7.57666 30.0025C7.66246 29.1402 7.81495 28.2917 8.00683 27.4808Z" stroke="#786B63" stroke-width="3" stroke-linecap="round"/></svg></div><div style="background:rgba(231,221,215,1);border-radius:10px;padding:6px;width:48px;height:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#786b63;margin-bottom:-2px;">7</span><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="10.5" r="6" stroke="#786B63" stroke-width="3" stroke-linecap="round"/><path d="M8.00683 27.4808C8.99845 23.2903 13.1576 21 17.4639 21H18.5361C22.8424 21 27.0016 23.2903 27.9932 27.4808C28.185 28.2917 28.3375 29.1402 28.4233 30.0025C28.5054 30.8268 27.8284 31.5 27 31.5H9C8.17157 31.5 7.49463 30.8268 7.57666 30.0025C7.66246 29.1402 7.81495 28.2917 8.00683 27.4808Z" stroke="#786B63" stroke-width="3" stroke-linecap="round"/></svg></div><div style="background:rgba(231,221,215,1);border-radius:10px;padding:6px;width:48px;height:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#786b63;margin-bottom:-2px;">8</span><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="10.5" r="6" stroke="#786B63" stroke-width="3" stroke-linecap="round"/><path d="M8.00683 27.4808C8.99845 23.2903 13.1576 21 17.4639 21H18.5361C22.8424 21 27.0016 23.2903 27.9932 27.4808C28.185 28.2917 28.3375 29.1402 28.4233 30.0025C28.5054 30.8268 27.8284 31.5 27 31.5H9C8.17157 31.5 7.49463 30.8268 7.57666 30.0025C7.66246 29.1402 7.81495 28.2917 8.00683 27.4808Z" stroke="#786B63" stroke-width="3" stroke-linecap="round"/></svg></div><div style="background:rgba(231,221,215,1);border-radius:10px;padding:6px;width:48px;height:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#786b63;margin-bottom:-2px;">9</span><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="10.5" r="6" stroke="#786B63" stroke-width="3" stroke-linecap="round"/><path d="M8.00683 27.4808C8.99845 23.2903 13.1576 21 17.4639 21H18.5361C22.8424 21 27.0016 23.2903 27.9932 27.4808C28.185 28.2917 28.3375 29.1402 28.4233 30.0025C28.5054 30.8268 27.8284 31.5 27 31.5H9C8.17157 31.5 7.49463 30.8268 7.57666 30.0025C7.66246 29.1402 7.81495 28.2917 8.00683 27.4808Z" stroke="#786B63" stroke-width="3" stroke-linecap="round"/></svg></div><div style="background:rgba(231,221,215,1);border-radius:10px;padding:6px;width:48px;height:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#786b63;margin-bottom:-2px;">10</span><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="10.5" r="6" stroke="#786B63" stroke-width="3" stroke-linecap="round"/><path d="M8.00683 27.4808C8.99845 23.2903 13.1576 21 17.4639 21H18.5361C22.8424 21 27.0016 23.2903 27.9932 27.4808C28.185 28.2917 28.3375 29.1402 28.4233 30.0025C28.5054 30.8268 27.8284 31.5 27 31.5H9C8.17157 31.5 7.49463 30.8268 7.57666 30.0025C7.66246 29.1402 7.81495 28.2917 8.00683 27.4808Z" stroke="#786B63" stroke-width="3" stroke-linecap="round"/></svg></div><div style="background:rgba(231,221,215,1);border-radius:10px;padding:6px;width:48px;height:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#786b63;margin-bottom:-2px;">11</span><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="10.5" r="6" stroke="#786B63" stroke-width="3" stroke-linecap="round"/><path d="M8.00683 27.4808C8.99845 23.2903 13.1576 21 17.4639 21H18.5361C22.8424 21 27.0016 23.2903 27.9932 27.4808C28.185 28.2917 28.3375 29.1402 28.4233 30.0025C28.5054 30.8268 27.8284 31.5 27 31.5H9C8.17157 31.5 7.49463 30.8268 7.57666 30.0025C7.66246 29.1402 7.81495 28.2917 8.00683 27.4808Z" stroke="#786B63" stroke-width="3" stroke-linecap="round"/></svg></div>
+    </div>
+    <!-- Two persona cards side by side -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;">
+      <div style="background:rgba(231,221,215,0.5);border-radius:15px;padding:28px;display:flex;flex-direction:column;gap:16px;">
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;color:#c97836;margin:0;text-transform:uppercase;letter-spacing:0.05em;">Conduit Existing User</p>
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;color:#000;line-height:1.5;margin:0;">A current wholesale or distribution business owner, 35&ndash;55, who adopted Conduit early. Comfortable with the product but navigates the site mostly through word of mouth or direct links. Doesn&rsquo;t use Copilot yet &mdash; doesn&rsquo;t understand what it does differently.</p>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px;">
+          <div style="display:flex;gap:10px;align-items:flex-start;">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#786b63" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px;"><path d="M13 2.5l2.5 2.5L5.5 15H3v-2.5L13 2.5z"/></svg>
+            <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#000;line-height:1.5;margin:0;"><u>Needs:</u> Clarity on what Copilot does and why they should upgrade. Familiarity with existing workflow.</p>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start;">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#786b63" stroke-width="1.2" stroke-linecap="round" style="flex-shrink:0;margin-top:1px;"><circle cx="7.5" cy="7.5" r="4.5"/><line x1="11" y1="11" x2="15" y2="15"/></svg>
+            <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#000;line-height:1.5;margin:0;"><u>Pain point:</u> Site loads slowly. Can&rsquo;t figure out how Copilot connects to their current Ops or Wholesale tools.</p>
+          </div>
+        </div>
+      </div>
+      <div style="background:rgba(231,221,215,0.5);border-radius:15px;padding:28px;display:flex;flex-direction:column;gap:16px;">
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;color:#c97836;margin:0;text-transform:uppercase;letter-spacing:0.05em;">Potential User</p>
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;color:#000;line-height:1.5;margin:0;">A modern mid-market buyer or operations manager, 28&ndash;45, evaluating SaaS tools for their supply chain. Tech-literate but skeptical of AI claims. Found Conduit through LinkedIn or a referral. Landed on the homepage with no context about the product.</p>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px;">
+          <div style="display:flex;gap:10px;align-items:flex-start;">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#786b63" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px;"><path d="M13 2.5l2.5 2.5L5.5 15H3v-2.5L13 2.5z"/></svg>
+            <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#000;line-height:1.5;margin:0;"><u>Needs:</u> Immediate clarity on what Conduit is, who it&rsquo;s for, and what Copilot actually does in practice.</p>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start;">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#786b63" stroke-width="1.2" stroke-linecap="round" style="flex-shrink:0;margin-top:1px;"><circle cx="7.5" cy="7.5" r="4.5"/><line x1="11" y1="11" x2="15" y2="15"/></svg>
+            <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#000;line-height:1.5;margin:0;"><u>Pain point:</u> Vague copy and overwhelming layout. Can&rsquo;t tell if the platform handles buying, selling, or both.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-divider"></div>
+
+  <!-- COMPETITIVE ANALYSIS -->
+  <div class="cs-block">
+    <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#000;margin-bottom:28px;">Finding the gaps in the market &rarr;</p>
+    <div class="cs-comp-grid">
+      <!-- Competitor 1 -->
+      <div class="cs-comp-card">
+        <div class="cs-comp-card-inner">
+          <div class="cs-comp-top">
+            <div class="cs-comp-icon">
+              <svg width="58" height="58" viewBox="0 0 58 58" fill="none"><rect width="58" height="58" rx="10" fill="#f0f0f0"/><circle cx="29" cy="22" r="8" stroke="#333" stroke-width="2.5"/><path d="M12 46c0-9.389 7.611-17 17-17s17 7.611 17 17" stroke="#333" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </div>
+            <p class="cs-comp-title">Competitor 1<br><span style="font-weight:400;font-size:13px;color:#786b63;">Category-Specific Platform</span></p>
+          </div>
+          <div class="cs-comp-rows">
+            <div class="cs-comp-row"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7.5" stroke="#1C9511" stroke-width="1.8"/><path d="M6.5 10L8.75 12.25L13.5 7.25" stroke="#1C9511" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Strong B2B buyer focus</div>
+            <div class="cs-comp-row"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7.5" stroke="#1C9511" stroke-width="1.8"/><path d="M6.5 10L8.75 12.25L13.5 7.25" stroke="#1C9511" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Clear supplier/retailer split</div>
+            <div class="cs-comp-row"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7.5" stroke="#B41F1F" stroke-width="1.8"/><path d="M7 13L13 7M13 13L7 7" stroke="#B41F1F" stroke-width="1.8" stroke-linecap="round"/></svg> Category-specific only</div>
+            <div class="cs-comp-row"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7.5" stroke="#B41F1F" stroke-width="1.8"/><path d="M7 13L13 7M13 13L7 7" stroke="#B41F1F" stroke-width="1.8" stroke-linecap="round"/></svg> No story-telling components</div>
+          </div>
+        </div>
+      </div>
+      <!-- Competitor 2 -->
+      <div class="cs-comp-card">
+        <div class="cs-comp-card-inner">
+          <div class="cs-comp-top">
+            <div class="cs-comp-icon">
+              <svg width="58" height="58" viewBox="0 0 58 58" fill="none"><rect width="58" height="58" rx="10" fill="#f0f0f0"/><rect x="10" y="16" width="38" height="26" rx="4" stroke="#333" stroke-width="2.5"/><path d="M18 27h22M18 33h14" stroke="#333" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </div>
+            <p class="cs-comp-title">Competitor 2<br><span style="font-weight:400;font-size:13px;color:#786b63;">Outcome-Led SaaS</span></p>
+          </div>
+          <div class="cs-comp-rows">
+            <div class="cs-comp-row"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7.5" stroke="#1C9511" stroke-width="1.8"/><path d="M6.5 10L8.75 12.25L13.5 7.25" stroke="#1C9511" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Outcome-led copy</div>
+            <div class="cs-comp-row"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7.5" stroke="#1C9511" stroke-width="1.8"/><path d="M6.5 10L8.75 12.25L13.5 7.25" stroke="#1C9511" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Strong trust signals</div>
+            <div class="cs-comp-row"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7.5" stroke="#B41F1F" stroke-width="1.8"/><path d="M7 13L13 7M13 13L7 7" stroke="#B41F1F" stroke-width="1.8" stroke-linecap="round"/></svg> No AI positioning</div>
+            <div class="cs-comp-row"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7.5" stroke="#B41F1F" stroke-width="1.8"/><path d="M7 13L13 7M13 13L7 7" stroke="#B41F1F" stroke-width="1.8" stroke-linecap="round"/></svg> Not operations-focused</div>
+          </div>
+        </div>
+      </div>
+      <!-- Competitor 3 -->
+      <div class="cs-comp-card">
+        <div class="cs-comp-card-inner">
+          <div class="cs-comp-top">
+            <div class="cs-comp-icon">
+              <svg width="58" height="58" viewBox="0 0 58 58" fill="none"><rect width="58" height="58" rx="10" fill="#f0f0f0"/><rect x="8" y="10" width="18" height="38" rx="3" stroke="#333" stroke-width="2.5"/><rect x="32" y="22" width="18" height="26" rx="3" stroke="#333" stroke-width="2.5"/></svg>
+            </div>
+            <p class="cs-comp-title">Competitor 3<br><span style="font-weight:400;font-size:13px;color:#786b63;">Technical Operations Tool</span></p>
+          </div>
+          <div class="cs-comp-rows">
+            <div class="cs-comp-row"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7.5" stroke="#1C9511" stroke-width="1.8"/><path d="M6.5 10L8.75 12.25L13.5 7.25" stroke="#1C9511" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Feature-rich and functional</div>
+            <div class="cs-comp-row"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7.5" stroke="#1C9511" stroke-width="1.8"/><path d="M6.5 10L8.75 12.25L13.5 7.25" stroke="#1C9511" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Clear product hierarchy</div>
+            <div class="cs-comp-row"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7.5" stroke="#B41F1F" stroke-width="1.8"/><path d="M7 13L13 7M13 13L7 7" stroke="#B41F1F" stroke-width="1.8" stroke-linecap="round"/></svg> Not aesthetics heavy</div>
+            <div class="cs-comp-row"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7.5" stroke="#B41F1F" stroke-width="1.8"/><path d="M7 13L13 7M13 13L7 7" stroke="#B41F1F" stroke-width="1.8" stroke-linecap="round"/></svg> Built for technical buyers only</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:32px;padding:20px 28px;background:#fffaf7;border-radius:12px;border-left:3px solid #c97836;">
+      <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;color:#000;line-height:1.6;margin:0;"><strong>Pattern:</strong> Every competitor either told a compelling story or showed a functional product &mdash; none did both. Conduit had the product. Our gap was the story.</p>
+    </div>
+  </div>
+
+  <!-- DIRECTION -->
+  <div class="cs-block shade">
+    <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#000;margin-bottom:28px;">Our Direction &rarr;</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap;">
+      <div style="flex:1;min-width:280px;border-left:3px solid #c97836;padding:10px 25px;">
+        <p style="font-family:'Source Serif 4',Georgia,serif;font-size:22px;font-weight:600;color:#0d0d0d;line-height:1.45;margin:0;">How might we&hellip;<br>write UX copy that <em>sells</em> the product?</p>
+      </div>
+      <div style="flex:1;min-width:280px;border-left:3px solid #c97836;padding:10px 25px;">
+        <p style="font-family:'Source Serif 4',Georgia,serif;font-size:22px;font-weight:600;color:#0d0d0d;line-height:1.45;margin:0;">How might we&hellip;<br>create animations that <em>demonstrate</em>?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-divider"></div>
+
+  <!-- DEVELOPMENT -->
+  <div class="cs-block" id="conduit-development">
+    <p class="cs-label-tag">Development</p>
+    <div class="cs-two" style="margin-bottom:44px;">
+      <h2>A Human-Centered Design Approach &amp; Conversational Copy.</h2>
+      <p class="body-copy">We rebuilt the entire design system from scratch, anchoring every decision to the question: does this help a wholesale buyer understand what Conduit does in under 10 seconds? Every page, every headline, every CTA had to earn its place by moving the user toward a demo booking or a deeper product exploration.</p>
+    </div>
+    <!-- The founder disagreement section -->
+    <div class="cs-adjust">
+      <p class="cs-adjust-h">The founder disagreement &rarr;</p>
+      <p class="body-copy">The founder had strong opinions about visual direction, and not all of them aligned with our research. Early on, he pushed for an aggressive, dark-mode-first aesthetic that tested well with tech audiences but actively confused our core Midwest wholesale buyers. I presented the testing data directly: <span class="cs-callout">8 out of 11 users in concept testing described the dark version as &ldquo;software for coders, not for us.&rdquo;</span> That moment shifted our collaboration from debate to alignment. We landed on a design language that felt modern and premium without alienating the people already paying for the product.</p>
+    </div>
+    <!-- Design system exploration overlapping images -->
+    <div style="position:relative;width:100%;height:340px;margin-top:48px;margin-bottom:60px;user-select:none;">
+      <div style="position:absolute;top:20px;left:0;width:48%;height:280px;border-radius:15px;overflow:hidden;box-shadow:4px 6px 16px rgba(0,0,0,0.22);transform:rotate(-2.5deg);z-index:1;border:1px solid #c97836;">
+        <img src="https://www.figma.com/api/mcp/asset/7ffb1d88-5125-4bb0-9fe5-6d7c371433d3" style="width:100%;height:100%;object-fit:cover;display:block;" alt="Design system exploration 1">
+      </div>
+      <div style="position:absolute;top:8px;left:22%;width:48%;height:280px;border-radius:15px;overflow:hidden;box-shadow:4px 6px 20px rgba(0,0,0,0.25);transform:rotate(1deg);z-index:2;border:1px solid #c97836;">
+        <img src="https://www.figma.com/api/mcp/asset/7e262d70-1143-4063-a6c3-62b326d689a6" style="width:100%;height:100%;object-fit:cover;display:block;" alt="Design system exploration 2">
+      </div>
+      <div style="position:absolute;top:38px;left:44%;width:48%;height:280px;border-radius:15px;overflow:hidden;box-shadow:4px 8px 24px rgba(0,0,0,0.28);transform:rotate(-0.5deg);z-index:3;border:1px solid #c97836;">
+        <img src="https://www.figma.com/api/mcp/asset/d3a51db8-b1e5-42de-9475-f442a3aaa107" style="width:100%;height:100%;object-fit:cover;display:block;" alt="Design system exploration 3">
+      </div>
+    </div>
+    <div style="margin-top:8px;">
+      <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#000;margin-bottom:16px;">UX Copy &rarr;</p>
+      <p class="body-copy">We rewrote every headline and sub-heading from scratch using benefit-first, conversational UX copy. Instead of &ldquo;Proactive outreach for your supply chain,&rdquo; we wrote &ldquo;Your AI that sells while you sleep.&rdquo; Instead of feature lists, we wrote outcomes. The copy treated users like smart professionals who needed to understand the value, not the mechanism.</p>
+    </div>
+  </div>
+
+  <!-- TESTING NOTE -->
+  <div class="cs-block shade">
+    <div style="background:#fffaf7;border-radius:12px;border-left:3px solid rgba(201,120,54,0.4);padding:20px 28px;">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#c97836;margin:0 0 10px;letter-spacing:0.04em;">A NOTE ON TESTING</p>
+      <p class="body-copy" style="color:#555;">Because of the founders&rsquo; rapid iteration timeline, there was no third round of usability testing before final dev handoff. Some you win, some you lose. With AI-accelerated product cycles, thoroughness is sometimes traded for speed. This is a real constraint that&rsquo;s becoming a reality for us product designers.</p>
+    </div>
+  </div>
+
+  <div class="cs-divider"></div>
+
+  <!-- SOLUTION -->
+  <div class="cs-block shade" id="conduit-solution">
+    <p class="cs-label-tag">Solution</p>
+    <h2 style="margin-bottom:40px;">A B2B SaaS Website Designed Around User Habits, While Nudging AI Adoption.</h2>
+    <div style="display:flex;flex-direction:column;gap:52px;">
+      <div class="cs-sol-item">
+        <span class="cs-sol-num">1</span>
+        <div style="flex:1;">
+          <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#000;margin-bottom:13px;">Centralized Product Dashboard &rarr;</p>
+          <p class="body-copy" style="margin-bottom:20px;">A single home for all of Conduit&rsquo;s four core products. Each showcased with their benefits, their function, and all ending with an incentivized CTA button to increase engagement.</p>
+          <div class="cs-sol-img">
+            <img src="https://www.figma.com/api/mcp/asset/8b284d00-d103-498d-ae2b-fa6cae738c0c" style="width:100%;display:block;" alt="Conduit dashboard">
+          </div>
+        </div>
+      </div>
+      <div class="cs-sol-item">
+        <span class="cs-sol-num">2</span>
+        <div style="flex:1;">
+          <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#000;margin-bottom:13px;">Human-Centered Design Uniformity &rarr;</p>
+          <p class="body-copy" style="margin-bottom:20px;">All pages were designed around a cohesive visual language of gradients and soft-to-deep blues, creating a premium feel that still felt approachable to non-technical B2B buyers. Every interaction point was optimized for conversion.</p>
+          <div class="cs-sol-img">
+            <img src="https://www.figma.com/api/mcp/asset/8ee28ea1-f34e-464b-b447-637f092667ae" style="width:100%;display:block;" alt="Conduit human-centered design">
+          </div>
+        </div>
+      </div>
+      <div class="cs-sol-item">
+        <span class="cs-sol-num">3</span>
+        <div style="flex:1;">
+          <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#000;margin-bottom:13px;">Conversational UX Copy &rarr;</p>
+          <p class="body-copy">We implemented benefit-first, conversational UX copy across all product pages. Headlines were rewritten to lead with outcomes (&ldquo;Your AI that sells while you sleep&rdquo;) rather than features (&ldquo;Proactive outreach automation&rdquo;). This closed the comprehension gap between what the product did and what users understood it to do.</p>
+        </div>
+      </div>
+      <div class="cs-sol-item">
+        <span class="cs-sol-num">4</span>
+        <div style="flex:1;">
+          <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#000;margin-bottom:13px;">Instructional Animations &rarr;</p>
+          <p class="body-copy">We figured the best way to showcase Conduit&rsquo;s products, especially Copilot, was through instructional micro-animations embedded directly in the product pages. Rather than static screenshots, users could watch Copilot work through a wholesale order in real time, making AI adoption feel tangible rather than theoretical.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESULTS -->
+  <div class="cs-block">
+    <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#000;margin-bottom:32px;">The Results &rarr;</p>
+    <div style="display:flex;gap:17px;align-items:center;justify-content:center;padding:12px 0 40px;">
+      <div style="flex:0 0 386px;display:flex;align-items:center;justify-content:center;">
+        <div style="transform:rotate(2.89deg);background:#fffaf7;border-radius:15px;padding:43px 33px;box-shadow:2px 4px 2.5px rgba(0,0,0,0.25);width:375px;display:flex;flex-direction:column;gap:35px;">
+          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;"><path d="M37.3816 12.0479L27.8946 20.6219C27.1947 21.2545 26.1144 21.1999 25.4818 20.4999L22.9129 17.6576C22.2803 16.9576 21.2 16.903 20.5001 17.5356L12.8055 24.4898" stroke="#C97836" stroke-width="3.41667" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.92969 5.37695L5.65337 30.628C5.55677 32.5391 5.50847 33.4947 5.8435 34.2434C6.13819 34.902 6.63383 35.4504 7.25936 35.81C7.97049 36.2188 8.92603 36.2671 10.8371 36.3637L36.0882 37.64" stroke="#C97836" stroke-width="3.41667" stroke-linecap="round"/></svg>
+          <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;color:#000;line-height:1.4;"><strong>Bounce rate reduced ~40%</strong> &mdash; users can now immediately identify what Conduit does and who it&rsquo;s for.</p>
+        </div>
+      </div>
+      <div style="flex:0 0 385px;display:flex;align-items:center;justify-content:center;">
+        <div style="transform:rotate(-2.74deg);background:#fffaf7;border-radius:15px;padding:43px 33px;box-shadow:2px 4px 2.5px rgba(0,0,0,0.25);width:375px;display:flex;flex-direction:column;gap:35px;">
+          <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;"><circle cx="21.4572" cy="21.4584" r="11.9583" transform="rotate(-2.74228 21.4572 21.4584)" stroke="#C97836" stroke-width="3.92308"/><path d="M21.1304 14.6318L21.4338 20.9675C21.4468 21.238 21.6766 21.4468 21.9471 21.4339L26.5764 21.2121" stroke="#C97836" stroke-width="3.92308" stroke-linecap="round"/></svg>
+          <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;color:#000;line-height:1.4;">Time-on-site <strong>increased by ~3&times;</strong> &mdash; users are reading and engaging, not abandoning on slow connections.</p>
+        </div>
+      </div>
+      <div style="flex:0 0 400px;display:flex;align-items:center;justify-content:center;">
+        <div style="transform:rotate(-6.88deg);background:#fffaf7;border-radius:15px;padding:43px 33px;box-shadow:2px 4px 2.5px rgba(0,0,0,0.25);width:375px;display:flex;flex-direction:column;gap:35px;">
+          <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;"><path d="M18.9 35.3268L14.0663 35.9103C13.1296 36.0234 12.2787 35.3557 12.1656 34.419L10.9372 24.2429C10.8241 23.3062 11.4918 22.4552 12.4284 22.3421L17.2621 21.7586C17.4026 21.7417 17.5303 21.8418 17.5472 21.9823L19.1237 35.0417C19.1406 35.1822 19.0405 35.3098 18.9 35.3268Z" stroke="#C97836" stroke-width="3.41667" stroke-linecap="round"/><path d="M17.5162 21.7276L20.0607 16.6917C20.2128 16.3907 20.2724 16.0514 20.232 15.7166L19.6798 11.142C19.5667 10.2053 20.2344 9.35433 21.1711 9.24126L22.8671 9.03652C24.7405 8.81038 26.4425 10.1457 26.6686 12.0191L27.6923 20.4992" stroke="#C97836" stroke-width="3.41667" stroke-linecap="round"/><path d="M24.3002 20.9086L32.3825 19.9329C34.4042 19.6889 36.1892 21.2563 36.2085 23.2926L36.29 31.8864C36.3065 33.6273 35.0113 35.1022 33.2829 35.3109L26.8453 36.088C26.3955 36.1423 25.9426 36.0157 25.5861 35.736L24.7988 35.1183C24.4423 34.8386 23.9894 34.712 23.5396 34.7663L19.154 35.2957" stroke="#C97836" stroke-width="3.41667" stroke-linecap="round"/></svg>
+          <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;color:#000;line-height:1.4;"><strong>~28% increase in demo requests</strong> in the first month post-launch.</p>
+        </div>
+      </div>
+    </div>
+    <p class="body-copy">Following the launch, the 4 current users who had reported complete site failures on slower connections can now access the site reliably. The new performance-optimized architecture was a direct outcome of grounding design decisions in actual user conditions.</p>
+  </div>
+
+  <!-- FINAL THOUGHTS -->
+  <div class="cs-block shade">
+    <div style="display:flex;gap:56px;align-items:center;flex-wrap:wrap;">
+      <div style="flex:1;min-width:280px;">
+        <p class="cs-label-tag">Final Thoughts</p>
+        <h2>Key Takeaways.</h2>
+        <div style="margin-top:24px;display:flex;flex-direction:column;gap:12px;">
+          <p class="body-copy">&bull;&nbsp; In B2B design, clarity beats cleverness every time. Users don&rsquo;t have patience for ambiguity when they&rsquo;re evaluating a tool for their business.</p>
+          <p class="body-copy">&bull;&nbsp; Founder relationships are a design constraint. Learning to present data as a collaborator rather than an authority was the skill that unlocked real alignment.</p>
+          <p class="body-copy">&bull;&nbsp; Copy is design. Rewriting the headlines changed how users experienced the entire product, without changing a single layout.</p>
+        </div>
+        <div style="margin-top:28px;padding:18px 24px;background:#fffaf7;border-radius:12px;border-left:3px solid #c97836;">
+          <p style="font-family:'Source Serif 4',Georgia,serif;font-size:20px;font-style:italic;color:#0d0d0d;line-height:1.5;margin:0;">&ldquo;To become a product designer is to become a good teacher &mdash; someone who can translate complexity into clarity, and ambition into trust.&rdquo;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-divider"></div>
+
+  <!-- NEXT STEPS + CLOSING -->
+  <div class="cs-block" style="padding-bottom:80px;">
+    <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#000;margin-bottom:50px;">Next Steps &rarr;</p>
+    <div style="display:flex;gap:60px;align-items:flex-start;flex-wrap:wrap;margin-bottom:50px;">
+      <div class="ns-step" style="flex:1;min-width:200px;display:flex;flex-direction:column;align-items:center;gap:30px;text-align:center;">
+        <img src="https://www.figma.com/api/mcp/asset/4b392c0d-86aa-44f2-9c48-ecf59eb6943c" width="135" height="135" alt="" style="display:block;">
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;color:#000;line-height:1.4;margin:0;">Expand design system for product surfaces</p>
+      </div>
+      <div class="ns-step" style="flex:1;min-width:200px;display:flex;flex-direction:column;align-items:center;gap:30px;text-align:center;">
+        <img src="https://www.figma.com/api/mcp/asset/7c015d68-8ff1-4651-9513-6d6fc35e0066" width="135" height="135" alt="" style="display:block;">
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;color:#000;line-height:1.4;margin:0;">Conduct post-launch usability study</p>
+      </div>
+      <div class="ns-step" style="flex:1;min-width:200px;display:flex;flex-direction:column;align-items:center;gap:30px;text-align:center;">
+        <img src="https://www.figma.com/api/mcp/asset/b05a1e2f-99fd-4a05-8ebe-d43ede93eb50" width="135" height="135" alt="" style="display:block;">
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;color:#000;line-height:1.4;margin:0;">Add trust signals for credibility</p>
+      </div>
+    </div>
+    <div style="background:#fffaf7;border-radius:15px;padding:12px 15px;box-shadow:0 4px 2px rgba(0,0,0,0.25);max-width:654px;display:flex;align-items:center;gap:18px;">
+      <div style="flex-shrink:0;padding:10px 10px 10px 0;">
+        <img src="https://www.figma.com/api/mcp/asset/ff1898b6-4282-45d8-a562-d6a95edfea14" style="width:127px;height:127px;object-fit:cover;display:block;" alt="Jaz avatar">
+      </div>
+      <div style="display:flex;flex-direction:column;gap:5px;">
+        <p style="font-family:'Source Serif 4',Georgia,serif;font-size:24px;font-weight:600;color:#000;margin:0;">Thanks for visiting!</p>
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:20px;color:#000;line-height:1.4;margin:0;">I design better than I summarize.<br>Let&rsquo;s fix that over a call or interview. <a href="mailto:ajf2232@columbia.edu" style="color:#c97836;text-decoration:underline;">Reach out here.</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CS footer -->
+  <div class="cs-more">
+    <p class="cs-more-title">More Case Studies &rarr;</p>
+    <div class="cs-more-cards">
+      <div class="cs-more-card" onclick="closeConduitCX();openCaseStudy()">
+        <span class="cs-more-num">MANUS AI ACQUIRED BY META &mdash; NO.&nbsp;01</span>
+        <span class="cs-more-name">Manus AI</span>
+        <span class="cs-more-desc">Designing an AI community platform to drive adoption.</span>
+      </div>
+      <div class="cs-more-card" onclick="closeConduitCX();openSomiaCX()">
+        <span class="cs-more-num">SOMIACX (MUFG BANK) &mdash; NO.&nbsp;02</span>
+        <span class="cs-more-name">SomiaCX &times; MUFG</span>
+        <span class="cs-more-desc">Architecting a unified UVP system for 3 financial subsidiaries.</span>
+      </div>
     </div>
   </div>
 </section>
@@ -1894,7 +2405,7 @@ function _hidePagesForCS(){
   if(nav) nav.style.display='none';
   window.scrollTo(0,0);
 }
-var _manusObs=null,_somiaObs=null;
+var _manusObs=null,_somiaObs=null,_conduitObs=null;
 function _makeNavObs(sectionIds,links){
   var o=new IntersectionObserver(function(entries){
     entries.forEach(function(e){
@@ -1928,6 +2439,56 @@ function openSomiaCX(){
   if(_somiaObs)_somiaObs.disconnect();
   _somiaObs=_makeNavObs(ids,links);
   if(links[0])links[0].classList.add('active');
+}
+function openConduitCX(){
+  _hidePagesForCS();
+  document.getElementById('case-conduit').classList.add('active');
+  var links=[].slice.call(document.querySelectorAll('#case-conduit .cs-topnav-inner a'));
+  var ids=['conduit-overview','conduit-problem','conduit-research','conduit-development','conduit-solution'];
+  if(_conduitObs)_conduitObs.disconnect();
+  _conduitObs=_makeNavObs(ids,links);
+  if(links[0])links[0].classList.add('active');
+}
+function closeConduitCX(){
+  if(_conduitObs){_conduitObs.disconnect();_conduitObs=null;}
+  document.getElementById('case-conduit').classList.remove('active');
+  goWork();
+}
+var _cqFront=0;
+function flipConduitQuote(){
+  var total=3;
+  var i0=_cqFront;
+  var i1=(i0+1)%total;
+  var i2=(i0+2)%total;
+  var c0=document.getElementById('cqcard-'+i0);
+  var c1=document.getElementById('cqcard-'+i1);
+  var c2=document.getElementById('cqcard-'+i2);
+  c0.style.transition='transform 0.48s cubic-bezier(0.4,0,0.2,1),opacity 0.38s';
+  c0.style.transform='translateX(140%) rotate(22deg)';
+  c0.style.opacity='0';
+  c0.style.zIndex='1';
+  c0.style.pointerEvents='none';
+  c0.style.cursor='default';
+  c0.onclick=null;
+  c1.style.transition='transform 0.48s cubic-bezier(0.4,0,0.2,1),opacity 0.38s';
+  c1.style.transform='rotate(-2.5deg)';
+  c1.style.opacity='1';
+  c1.style.zIndex='3';
+  c1.style.pointerEvents='auto';
+  c1.style.cursor='pointer';
+  c1.onclick=flipConduitQuote;
+  c2.style.transition='transform 0.48s cubic-bezier(0.4,0,0.2,1),opacity 0.38s';
+  c2.style.transform='rotate(2.5deg) scale(0.975) translateX(8px)';
+  c2.style.opacity='0.8';
+  c2.style.zIndex='2';
+  _cqFront=i1;
+  setTimeout(function(){
+    c0.style.transition='none';
+    c0.style.transform='rotate(5deg) scale(0.95) translateX(18px)';
+    c0.style.opacity='0.65';
+    c0.style.zIndex='1';
+    setTimeout(function(){c0.style.transition='';},50);
+  },460);
 }
 function closeSomiaCX(){
   if(_somiaObs){_somiaObs.disconnect();_somiaObs=null;}
