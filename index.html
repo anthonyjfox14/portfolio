@@ -2285,7 +2285,7 @@ class Ball{
     ctx.beginPath();ctx.arc(0,0,r,0,Math.PI*2);ctx.save();ctx.clip();
     if(this.num===0){
       const g=ctx.createRadialGradient(-r*.28,-r*.32,r*.03,0,0,r*1.05);
-      g.addColorStop(0,'#FDFAF4');g.addColorStop(.5,'#F0EBE2');g.addColorStop(1,'#D4CCC0');
+      g.addColorStop(0,'#E8A870');g.addColorStop(.5,'#C97836');g.addColorStop(1,'#8B5020');
       ctx.fillStyle=g;ctx.fillRect(-r,-r,r*2,r*2);
     }else if(this.stripe){
       ctx.fillStyle='#F2EDE7';ctx.fillRect(-r,-r,r*2,r*2);
@@ -2469,8 +2469,8 @@ function drawAiCue(){
   ctx.beginPath();ctx.moveTo(tx2+px2*2.5,ty2+py2*2.5);ctx.lineTo(bx+px2*2.5,by+py2*2.5);ctx.stroke();
   const rx=tx2-nx*len*.65,ry=ty2-ny*len*.65;
   ctx.lineWidth=10;ctx.strokeStyle='rgba(30,10,0,0.4)';ctx.beginPath();ctx.moveTo(rx-nx*2.5,ry-ny*2.5);ctx.lineTo(rx+nx*2.5,ry+ny*2.5);ctx.stroke();
-  ctx.lineWidth=5;ctx.strokeStyle='#7A9EAE';ctx.beginPath();ctx.moveTo(tx2,ty2);ctx.lineTo(tx2-nx*8,ty2-ny*8);ctx.stroke();
-  ctx.beginPath();ctx.arc(tx2-nx*8,ty2-ny*8,3.5,0,Math.PI*2);ctx.fillStyle='#5A8090';ctx.fill();
+  ctx.lineWidth=5;ctx.strokeStyle='#7A4E20';ctx.beginPath();ctx.moveTo(tx2,ty2);ctx.lineTo(tx2-nx*8,ty2-ny*8);ctx.stroke();
+  ctx.beginPath();ctx.arc(tx2-nx*8,ty2-ny*8,3.5,0,Math.PI*2);ctx.fillStyle='#5A3010';ctx.fill();
   ctx.restore();
 }
 function drawCue(){
@@ -2489,8 +2489,8 @@ function drawCue(){
   ctx.beginPath();ctx.moveTo(tx2+px2*2.5,ty2+py2*2.5);ctx.lineTo(bx+px2*2.5,by+py2*2.5);ctx.stroke();
   const rx=tx2-nx*len*.65,ry=ty2-ny*len*.65;
   ctx.lineWidth=10;ctx.strokeStyle='rgba(30,10,0,0.4)';ctx.beginPath();ctx.moveTo(rx-nx*2.5,ry-ny*2.5);ctx.lineTo(rx+nx*2.5,ry+ny*2.5);ctx.stroke();
-  ctx.lineWidth=5;ctx.strokeStyle='#7A9EAE';ctx.beginPath();ctx.moveTo(tx2,ty2);ctx.lineTo(tx2-nx*8,ty2-ny*8);ctx.stroke();
-  ctx.beginPath();ctx.arc(tx2-nx*8,ty2-ny*8,3.5,0,Math.PI*2);ctx.fillStyle='#5A8090';ctx.fill();
+  ctx.lineWidth=5;ctx.strokeStyle='#7A4E20';ctx.beginPath();ctx.moveTo(tx2,ty2);ctx.lineTo(tx2-nx*8,ty2-ny*8);ctx.stroke();
+  ctx.beginPath();ctx.arc(tx2-nx*8,ty2-ny*8,3.5,0,Math.PI*2);ctx.fillStyle='#5A3010';ctx.fill();
   ctx.restore();
   const alpha=Math.min(.38,.06+(Math.max(0,dist-30)/180)*.32);
   ctx.save();ctx.setLineDash([5,10]);ctx.strokeStyle=`rgba(255,240,200,${alpha})`;ctx.lineWidth=1.2;
