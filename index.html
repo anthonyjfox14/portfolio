@@ -282,7 +282,7 @@ html, body { width: 100%; min-height: 100%; background: #fff; }
 .table-glow {
   position: absolute; left: 0; top: 0; width: 419px; height: 735px; border-radius: 25px;
   background: radial-gradient(ellipse at 50% 54%, #c97836 0%, #8f4b1e 50%, #6a3010 100%);
-  filter: blur(36px); opacity: 0.88; pointer-events: none;
+  filter: blur(36px); opacity: 0.15; pointer-events: none;
 }
 #game-canvas { display: block; position: relative; mask-image: radial-gradient(ellipse 92% 90% at 43.6% 42.7%, black 80%, transparent 100%); -webkit-mask-image: radial-gradient(ellipse 92% 90% at 43.6% 42.7%, black 80%, transparent 100%); }
 #game-char { position: absolute; left: 128px; top: -86px; width: 160px; height: 130px; pointer-events: none; }
@@ -2428,28 +2428,22 @@ canvas.addEventListener('click',e=>{
 canvas.addEventListener('touchend',e=>{e.preventDefault();if(phase==='won'){initGame();return;}if(phase==='resetting')return;shoot();},{passive:false});
 function rrPath(x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.lineTo(x+w-r,y);ctx.arcTo(x+w,y,x+w,y+r,r);ctx.lineTo(x+w,y+h-r);ctx.arcTo(x+w,y+h,x+w-r,y+h,r);ctx.lineTo(x+r,y+h);ctx.arcTo(x,y+h,x,y+h-r,r);ctx.lineTo(x,y+r);ctx.arcTo(x,y,x+r,y,r);ctx.closePath();}
 function drawTable(){
-  const rg=ctx.createLinearGradient(0,0,FRAME.w,FRAME.h);
-  rg.addColorStop(0,'#a85a28');rg.addColorStop(.5,'#8f4b1e');rg.addColorStop(1,'#7a3c14');
-  rrPath(FRAME.x,FRAME.y,FRAME.w,FRAME.h,FRAME.r);ctx.fillStyle=rg;ctx.fill();
-  rrPath(SURF.x-8,SURF.y-8,SURF.w+16,SURF.h+16,SURF.r+6);ctx.fillStyle='rgba(0,0,0,0.18)';ctx.fill();
+  // Outer rail: cream fill (matches page bg) + brown stroke outline
+  rrPath(FRAME.x,FRAME.y,FRAME.w,FRAME.h,FRAME.r);
+  ctx.fillStyle='#fffaf7';ctx.fill();
+  ctx.strokeStyle='#c97836';ctx.lineWidth=5;ctx.stroke();
+  // Inner playing surface: lighter inset border
   rrPath(SURF.x,SURF.y,SURF.w,SURF.h,SURF.r);
-  const fg=ctx.createRadialGradient(CX,(TW+BW)/2,40,CX,(TW+BW)/2,SURF.h*.6);
-  fg.addColorStop(0,'#dc8e45');fg.addColorStop(.6,'#c97836');fg.addColorStop(1,'#b06528');
-  ctx.fillStyle=fg;ctx.fill();
-  ctx.save();rrPath(SURF.x,SURF.y,SURF.w,SURF.h,SURF.r);ctx.clip();
-  ctx.strokeStyle='rgba(255,255,255,0.03)';ctx.lineWidth=1;
-  for(let y=TW+4;y<BW;y+=7){ctx.beginPath();ctx.moveTo(LW,y);ctx.lineTo(RW,y);ctx.stroke();}
-  ctx.restore();
-  for(const sy of[TW+SURF.h*.27,(TW+BW)/2,TW+SURF.h*.76]){ctx.beginPath();ctx.arc(CX,sy,2.5,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,0.2)';ctx.fill();}
-  ctx.save();rrPath(SURF.x,SURF.y,SURF.w,SURF.h,SURF.r);ctx.clip();
-  ctx.setLineDash([3,8]);ctx.strokeStyle='rgba(255,255,255,0.08)';ctx.lineWidth=1;
-  ctx.beginPath();ctx.moveTo(LW,TW+SURF.h*.76);ctx.lineTo(RW,TW+SURF.h*.76);ctx.stroke();ctx.setLineDash([]);ctx.restore();
+  ctx.strokeStyle='rgba(201,120,54,0.45)';ctx.lineWidth=1.5;ctx.stroke();
+  // Pockets: illustrated concentric circles
   for(const p of POCKETS){
-    ctx.beginPath();ctx.arc(p.x,p.y,PR+4,0,Math.PI*2);
-    const og=ctx.createRadialGradient(p.x,p.y,PR-1,p.x,p.y,PR+4);og.addColorStop(0,'rgba(0,0,0,0.45)');og.addColorStop(1,'rgba(0,0,0,0)');ctx.fillStyle=og;ctx.fill();
+    ctx.beginPath();ctx.arc(p.x,p.y,PR+5,0,Math.PI*2);
+    ctx.fillStyle='#fffaf7';ctx.fill();
+    ctx.strokeStyle='#c97836';ctx.lineWidth=1.5;ctx.stroke();
     ctx.beginPath();ctx.arc(p.x,p.y,PR,0,Math.PI*2);
-    const pg=ctx.createRadialGradient(p.x-2,p.y-2,1,p.x,p.y,PR);pg.addColorStop(0,'#1a1a1a');pg.addColorStop(1,'#040404');ctx.fillStyle=pg;ctx.fill();
-    ctx.beginPath();ctx.arc(p.x,p.y,PR*.6,0,Math.PI*2);ctx.fillStyle='rgba(0,0,0,0.8)';ctx.fill();
+    ctx.strokeStyle='#c97836';ctx.lineWidth=1.5;ctx.stroke();
+    ctx.beginPath();ctx.arc(p.x,p.y,3,0,Math.PI*2);
+    ctx.fillStyle='#c97836';ctx.fill();
   }
 }
 function drawAiCue(){
